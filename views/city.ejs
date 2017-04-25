@@ -49,15 +49,20 @@
           </div>
         </div>
   </div>
+<br/>
+  <div class="container">
+          <div class="row">
+              <% for(var i=1;i<=numberOfImages;i++) {%>
+              <div class="col-md-6">
+                 <div class="thumbnail">
+                 <img src="/images/<%=city%>/<%=city%>-<%=i%>.jpg"/>
+                 </div>
+              </div>
+              <%}%>
+          </div>
+  </div>
 
-  <br/>
-    <div class="container">
-        <div class="row">
-             <div class="col-md-12">
-              <img src="/images/main.jpg" class="img-responsive" alt="iLoveMyCity"/>
-             </div>
-      </div>
-    </div>
+
 
 <script src="/js/jquery-1.11.3.js"></script>
 <script src="/js/bootstrap.min.js"></script>
